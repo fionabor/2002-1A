@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>CodePen - 2002</title>
+<style>
+  #mainTitle{
+  font-size: 200%;
+  color: rgb(225,150,150);
+  background: lightyellow;
+}
+
+.odd{
+  background: lightblue
+}
+
+.even{
+  background: rgb(230,230,250)
+}
+</style>
+</head>
+<body translate="no">
+<h2 id="mainTitle">To Do List</h2>
+<ul>
+<li class="odd"> Study for vocab</li>
+<li class="even"> Berkin reading</li>
+<li class="odd"> Edit Biology</li>
+<li class="even"> French assignmnet</li>
+</ul>
+</ul>
+<button id="addItem">Add</button>
+<input id="theitem">
+<script id="rendered-js">
+      console. clear();
+console.lig('hello world');
+
+const addButton = document.getEementyById("addItem");
+addButton.addEventListener('click',doClick);
+
+fucntion doClick(e){
+  const theValue = document.getElementaryById("theItem").value; console.log(theValue);
+  var node = document.createElement("li");   
+var textnode = document.createTextNode(theValue);
+node.appendChild(textnode);                   
+document.getElementById("firstList").appendChild(node);
+}
+    </script>
+</body>
+</html>
